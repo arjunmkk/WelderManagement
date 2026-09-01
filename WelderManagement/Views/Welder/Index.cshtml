@@ -1,0 +1,34 @@
+﻿@model List<WelderManagement.Models.Welder>
+
+   
+<h1>WELDER LIST</h1>
+
+<table border="1">
+    <tr>
+        <th>WelderID</th>
+        <th>WelderCode</th>
+        <th>WelderName</th>
+        <th>PassportNO</th>
+        <th>WelderQualTest</th>
+    </tr>
+    @foreach (var w in Model)
+    {
+        <tr>
+            <td>@w.WelderID</td>
+            <td>@w.WelderCode</td> 
+            <td>@w.WelderName</td> 
+            <td>@w.PassportNo</td>
+            <td>@w.WelderQualTest</td>
+            <td>
+                <a asp-action="Add" asp-route-WelderID="@w.WelderID">Add</a>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-WelderID="@w.WelderID">Edit</a>
+            </td>
+            <td>
+                <a asp-action="del" asp-route-WelderID="@w.WelderID">Delete</a>
+            </td>
+            
+        </tr>
+    }
+</table> 

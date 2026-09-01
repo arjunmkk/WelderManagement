@@ -1,0 +1,48 @@
+﻿@model WelderManagement.Models.Welder
+
+<h2>Delete Welder</h2>
+
+<form asp-action="del" method="post">
+    <label>WelderID</label>
+    <input asp-for="WelderID"/>
+    <br /><br/>
+
+    <label>WelderCode</label>
+    <input asp-for="WelderCode" />
+    <br /> <br />
+
+    <label>WelderName</label>
+    <input asp-for="WelderName" />
+    <br /> <br />
+
+    <label>Nationality</label>
+    <input asp-for="Nationality" />
+    <br /> <br />
+
+    
+    <label>JoinningDate</label>
+    <input asp-for="JoinningDate" />
+    <br /> <br />
+
+    <label>PassportNo</label>
+    <input asp-for="PassportNo" />
+    <br /> <br />
+
+    <label>SubContractorID</label>
+    <input asp-for="SubContractorID" />
+    <br /> <br />
+
+    <label>AgencyID</label>
+    <input asp-for="AgencyID" />
+    <br /> <br /> 
+
+    <label>WelderQualTest</label>
+    <input asp-for="WelderQualTest" />
+    <br /> <br />
+
+    <input type="submit"  value="Delete"/>
+  
+</form>
+
+
+ 

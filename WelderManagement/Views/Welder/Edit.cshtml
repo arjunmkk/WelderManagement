@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model WelderManagement.Models.Welder
+
+<h2>Edit Welder</h2>
+
+<form asp-action="Edit" method="post">
+
+    <input asp-for="WelderID" type="hidden" />
+
+    <label>Welder Code</label>
+    <input asp-for="WelderCode" />
+    <br /><br />
+
+    <label>Welder Name</label>
+    <input asp-for="WelderName" />
+    <br /><br />
+
+    <label>Nationality</label>
+    <input asp-for="Nationality" />
+    <br /><br />
+
+    <label>Joining Date</label>
+    <input asp-for="JoinningDate" type="date" />
+    <br /><br />
+
+    <label>Passport No</label>
+    <input asp-for="PassportNo" />
+    <br /><br />
+
+    <label>Sub Contractor ID</label>
+    <input asp-for="SubContractorID" />
+    <br /><br />
+
+    <label>Agency ID</label>
+    <input asp-for="AgencyID" />
+    <br /><br />
+
+    <label>WelderQualTest</label>
+    <input asp-for="WelderQualTest" />
+    <br /><br />
+
+    <input type="submit" value="Update" />
+
+</form>
+

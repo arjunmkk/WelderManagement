@@ -1,0 +1,46 @@
+﻿@model WelderManagement.Views.ViewModels.WelderViewModel
+
+<h2> Add Welder </h2>
+
+<form asp-action="Add" method="post">
+    <label>Welder ID</label>
+    <input asp-for="WelderID"/>
+     <br /><br />
+
+    <label>Welder Code</label>
+    <input asp-for="WelderCode"/>
+    <br /><br />
+
+    <label>Welder Name</label>
+    <input asp-for="WelderName"/>
+    <br /><br />
+
+    <label>Nationality</label>
+    <input asp-for="Nationality"/>
+    <br /><br />
+
+    <label>Joinning date</label>
+    <input asp-for="JoinningDate" />
+    <br /><br />
+
+    <label>Passport No</label>
+    <input asp-for="PassportNo" />
+    <br /><br />
+
+    <label>Sub Contractor ID</label>
+    <input asp-for="SubContractorID"/>
+    <br /><br />
+
+    <label>Agency ID</label>
+    <input asp-for="AgencyID"/>
+    <br /><br />
+
+    <label>Welder Qual Teat</label>
+    <input asp-for="WelderQualTest"/>
+    <br /><br />
+    <input type="submit" name="name" value="save" />
+    
+</form>
+
+
+
